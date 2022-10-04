@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZARA HOME</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(function(){
+                $('.bxslider').bxSlider({
+                    mode: 'fade',
+                    auto: true,
+                    captions: true,
+                    // slideWidth: 100%
+                });
+            });
+
+            $(".menu").mouseenter(function(){
+                $(".menu_wrap").show().stop().animate({left:0});
+                $(".logo img").hide().stop().animate({left:0});
+            });
+            $(".menu").mouseleave(function(){
+                $(".menu_wrap ").hide().stop().animate({left:'-'+50+'%'});
+                $(".logo img").show().stop().animate({left:'-'+50+'%'});
+            });
+
+            $(".subscribe>p").click(function(){
+                $("this")
+            });
+        });
+    </script>
+    <!--bxSlider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/0bbcad6313.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="menu_logo">
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+                <div class="menu_wrap">
+                    <img src="images/logo.jpg" srcset="images/logo.svg" alt="logo_img">
+                    <a href="#"><p>신상품</p></a>
+                    <a href="#" class="outdoor"><p>아웃도어</p></a><a href="#"><span>신상</span></a>
+                    <a href="#" class="bestseller"><p>베스트셀러</p></a><a href="#"><span>신상</span></a>
+                    <a href="#"><p>SALE</p></a>
+                    <a href="#"><p>침실</p></a>
+                    <a href="#"><p>의류 &#38; 슈즈</p></a>
+                    <a href="#"><p>거실</p></a>
+                    <a href="#"><p>주방</p></a>
+                    <a href="#"><p>다이닝</p></a>
+                    <a href="#"><p>욕실</p></a>
+                    <a href="#"><p>디퓨저 &#38; 캔들</p></a>
+                    <a href="#"><p>키즈</p></a>
+                    <br>
+                    <br>
+                    <a href="#"><p>데일리 리빙</p></a>
+                    <a href="#"><p>스윔웨어</p></a>
+                    <a href="#"><p>펫 컬렉션</p></a>
+                    <a href="#"><p>드레스룸</p>
+                    <br>
+                    <a href="#"><p>STORIES</p></a>
+                    <a href="#"><p>+INFO</p></a>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="images/logo.jpg" srcset="images/logo.svg" alt="logo_img">
+            </div>
+        </div>
+        <div class="input">
+            <label for="search">검색</label>
+            <input type="text">
+        </div>
+        <div class="icons">
+            <!-- <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a> -->
+            <a href="#" class="login"><i class="fa-solid fa-user"></i><span>로그인</span></a>
+            <a href="#" class="bag"><i class="fa-solid fa-bag-shopping"></i><span>0</span></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="bxslider">
+            <div><img src="images/postcard1.png" title="POSTCARDS FROM SUMMER"></div>
+            <div><img src="images/postcard2.png" title="POSTCARDS FROM SUMMER"></div>
+            <div><img src="images/postcard3.png" title="POSTCARDS FROM SUMMER"></div>
+            <div><img src="images/postcard4.png" title="SALE"></div>
+            <div><img src="images/postcard5.png" title="신상품 침구 세트"></div>
+        </div>
+        <div class="sale">
+            <p>SALE 최대 50% | 일부 품목 제외 | 6월 22일부터 재고 소진시까지</p>
+        </div>
+    </main>
+    <hr>
+
+    <footer>
+        <div class="info">자라홈코리아 유한회사(Zara Home Korea Ltd.)| 서울시 강남구 영동대로 511 33층| 사업자 등록 번호:120-88-16920| 대표자:Lorena Mosquera| 연락처:080-500-6445 (수신자 부담 번호)| 이메일:info.kr@zarahome.com| 호스팅 서비스 제공업체:ITX Merken B.V.| 통신판매업신고:2018-서울강남-00458 |개인정보 보호 정책</div>
+        <div class="subscribe">
+            <p>뉴스레터 구독 - 이메일 주소를 입력하세요 *</p>
+            <input type="text">
+        </div>
+        <div class="follow_download">
+            <div class="follow">
+                <p>팔로우하세요</p>
+                <div class="sns">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-spotify"></i></a>
+                </div>
+            </div>
+            <div class="download">
+                <p>자라홈 APP 다운로드</p>
+                <div class="app">
+                    <a href="#"><i class="fa-brands fa-apple"></i></a>
+                    <a href="#"><i class="fa-brands fa-android"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="cor_info">
+            <div class="cor_info_col1">
+                <h1>정책</h1>
+                <a href="#"><p>구매 약관</p></a>
+                <a href="#"><p>개인정보 보호 정책</p></a>
+                <a href="#"><p>쿠키 정책</p></a>
+                <a href="#"><p>쿠키 설정</p></a>
+            </div>
+            <div class="cor_info_col2">
+                <h1>회사</h1>
+                <a href="#"><p>채용 정보</p></a>
+                <a href="#"><p>프레스센터</p></a>
+            </div>
+            <div class="cor_info_col3">
+                <h1>연락처</h1>
+                <a href="#"><p>연락처</p></a>
+                <a href="#"><p>GUEST PURCHASE</p></a>
+                <a href="#"><p>매장찾기</p></a>
+                <a href="#"><p>080-500-6445</p></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
